@@ -37,26 +37,42 @@ step by step until you finally become to master branch.
 - create the main file in this case index.js
 (you'll can se the index.js in the repo files)
 
-    ### code in this block:
-```javascript
-'use strict' //I'm basing my job on Carlos Azaustre course and its using EcmaScript 6
+    
 
-const ipserver = 'https://noderest-josheriff.c9users.io'; // to bring from config.js in future 
-
-const express = require('express');
-
-const app = express();
-
-app.listen (8080, () => {
-    console.log('API REST corriendo en '+ipserver);
-});
-```
 ##next step
 -Install body parser:
 ```
-npm -i S body-parser
+npm i -S body-parser
+```
+-Install nodemon: (optional) (-D is dev dependencies)
+```
+npm i -D nodemon
+```
+### code changed in json
+In scripts:
+```
+"scripts": {
+    "start": "nodemon index2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+```
+Now when we launch the aplication in dev, we will write
+```
+npm start
 ```
 
+### code changed in this block:
+
+```javascript
+const port = process.env.PORT || 3000 ; // port by enviroment variable
+
+
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+```
         
 
 
