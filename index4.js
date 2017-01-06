@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 // Adding middleware
 
-app.get('/hola/:name',(req,res) => {
+app.get('/hola/:name',(req,res) => { // :name is a req parameter
     res.send({ message : "Hola " + req.params.name});
 });
 
