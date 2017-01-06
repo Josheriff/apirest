@@ -1,0 +1,14 @@
+{
+  "name": "apirest",
+  "version": "1.0.0",
+  "description": "Api restfull step by step, node, express and mongo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Manuel Gallego aka josheriff",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
