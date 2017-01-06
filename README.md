@@ -1,8 +1,15 @@
 # DISCLAIMER
 
+- FROM NOW ALL THIS CONTENT IS JUST AN ADDAPTED STEP BY STEP FROM CARLOS AZAUSTRE COURSE
 - THIS REPOSITORY IS BEING BUILDED, WHEN ENDED I WILL ERASE THIS LINES
 - I WILL START MAKING NODE, EXPRESS, MONGO
 - I WILL CHANGE TO NODE,PILLARSJS,FIREBASE
+
+# HOW TO USE:
+I have created different branches index1.js index2.js etc the last one is the master
+that will contain the final app working.
+The way to is you have to read, practice and understand from index1.js to master
+step by step until you finally become to master branch.
 
 ## First step:
 
