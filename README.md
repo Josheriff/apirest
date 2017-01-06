@@ -93,6 +93,19 @@ app.use(bodyParser.json());
 
 ```
 
+## code changed in index3.js:
 
+```javascript
+// Adding middleware
+app.get('/hola',(req,res) => {
+    res.send({ message : "Hola Mundo!"});
+}); // https://ipdirection/hola -> Hola Mundo!
+```
+## code re-changed in index3.js:
+```javascript
+app.get('/hola/:name',(req,res) => { // :name is a req parameter
+    res.send({ message : "Hola " + req.params.name});
+}); // https://ipdirection/hola/mundo -> Hola mundo
+```
 
       

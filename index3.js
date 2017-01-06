@@ -11,6 +11,12 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// Adding middleware
+
+app.get('/hola/:name',(req,res) => {
+    res.send({ message : "Hola " + req.params.name});
+});
+
 app.listen (port, () => {
     console.log('API REST corriendo en '+ipserver+': '+port);
 });
