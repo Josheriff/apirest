@@ -51,6 +51,12 @@ app.listen (8080, () => {
     console.log('API REST corriendo en '+ipserver);
 });
 ```
+##next step
+-Install body parser:
+```
+npm -i S body-parser
+```
+
         
 
 
