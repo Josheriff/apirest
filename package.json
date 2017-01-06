@@ -2,9 +2,9 @@
   "name": "apirest",
   "version": "1.0.0",
   "description": "Api restfull step by step, node, express and mongo",
-  "main": "index2.js",
+  "main": "index3.js",
   "scripts": {
-    "start": "nodemon index2.js",
+    "start": "nodemon index3.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jose Manuel Gallego aka josheriff",
