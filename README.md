@@ -67,7 +67,7 @@ npm i -S body-parser
 ```
 npm i -D nodemon
 ```
-### code changed in json
+### code changed in json index2
 In scripts:
 ```
 "scripts": {
@@ -80,7 +80,7 @@ Now when we launch the aplication in dev, we will write
 npm start
 ```
 
-### code changed in this block:
+### code changed in index2.js:
 
 ```javascript
 const port = process.env.PORT || 3000 ; // port by enviroment variable
