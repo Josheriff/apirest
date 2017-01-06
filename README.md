@@ -37,6 +37,25 @@ step by step until you finally become to master branch.
 - create the main file in this case index.js
 (you'll can se the index.js in the repo files)
 
+## next step
+
+- create the main file in this case index.js
+(you'll can se the index.js in the repo files)
+
+    ### code in index1.js:
+```javascript
+'use strict' //I'm basing my job on Carlos Azaustre course and its using EcmaScript 6
+
+const ipserver = 'https://noderest-josheriff.c9users.io'; // to bring from config.js in future 
+
+const express = require('express');
+
+const app = express();
+
+app.listen (8080, () => {
+    console.log('API REST corriendo en '+ipserver);
+});
+```
     
 
 ##next step
