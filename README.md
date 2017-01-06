@@ -23,10 +23,11 @@
 
 ## next step
 
-"npm install express --save" or "npm i express -S"
+- "npm install express --save" or "npm i express -S"
 
 ## next step
 
 - create the main file in this case index.js
+(you'll can se the index.js in the repo files)
 
       
