@@ -4,7 +4,7 @@
 - I WILL START MAKING NODE, EXPRESS, MONGO
 - I WILL CHANGE TO NODE,PILLARSJS,FIREBASE
 
-# First step:
+## First step:
 
 *Instruction*-> in console go to your folder project or create one.
   - *Code shell* -> 'git init'
@@ -21,11 +21,11 @@
       
       - Is this ok: yes
 
-# next step
+## next step
 
 "npm install express --save" or "npm i express -S"
 
-# next step
+## next step
 
 - create the main file in this case index.js
 
