@@ -4,6 +4,7 @@
 - I WILL START MAKING NODE, EXPRESS, MONGO
 - I WILL CHANGE TO NODE,PILLARSJS,FIREBASE
 
+# First step:
 
 *Instruction*-> in console go to your folder project or create one.
   - *Code shell* -> 'git init'
