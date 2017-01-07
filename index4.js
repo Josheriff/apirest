@@ -11,12 +11,37 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Adding middleware
+// Adding GET
 
-app.get('/hola/:name',(req,res) => { // :name is a req parameter
-    res.send({ message : "Hola " + req.params.name});
+app.get('/api/product',(req,res) => {
+        res.status(200).send({products: []}); // status 200 = OK
 });
 
+app.get('/api/product/:productId',(req, res) => {
+    
+});
+
+// Adding POST
+
+app.post('/api/product', (req, res) =>{
+    console.log(req.body);
+    res.status(200).send({message: 'Producto recibido'});
+});
+
+// Adding put (to refresh items)
+
+app.put('api/product/:productId',(req, res) =>{
+    
+});
+
+// Adding delete
+
+app.delete('api/product/:productId',(req, res) =>{
+    
+});
+
+// SERVIDOR ESCUCHANDO:
 app.listen (port, () => {
     console.log('API REST corriendo en '+ipserver+': '+port);
 });
+// CODIGO IMPORTANTE ENTRE COMENTARIOS

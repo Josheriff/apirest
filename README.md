@@ -108,4 +108,41 @@ app.get('/hola/:name',(req,res) => { // :name is a req parameter
 }); // https://ipdirection/hola/mundo -> Hola mundo
 ```
 
+## lets continue with index4
+
+## code changed in index4.js:
+
+erased the example app.get('/hola/:name'), now that we know how it works
+```javascript
+// Adding GET
+
+app.get('/api/product',(req,res) => {
+        res.status(200).send({products: []}); // status 200 = OK
+});
+
+app.get('/api/product/:productId',(req, res) => {
+    
+});
+
+// Adding POST
+
+app.post('/api/product', (req, res) =>{
+    console.log(req.body);
+    res.status(200).send({message: 'Producto recibido'});
+});
+
+// Adding put (to refresh items)
+
+app.put('api/product/:productId',(req, res) =>{
+    
+});
+
+// Adding delete
+
+app.delete('api/product/:productId',(req, res) =>{
+    
+});
+```
+You can test the post metod from: 
+[Hurl.it](https://www.hurl.it)
       
