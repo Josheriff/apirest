@@ -146,3 +146,17 @@ app.delete('api/product/:productId',(req, res) =>{
 You can test the post metod from: 
 [Hurl.it](https://www.hurl.it)
       
+##next step
+- Install mongoose
+- ```npm i -S mongoose```
+## code changed in index5.js
+
+```javascript
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://0.0.0.0:27017/shop', (err, res) => {
+    if (err) throw err
+    console.log('conexión a base de datos establecida...');
+})
+```
+
