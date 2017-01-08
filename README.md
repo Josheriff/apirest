@@ -192,4 +192,20 @@ app.post('/api/product', (req, res) =>{
     
 });
 ```
+if you make npm start and use hurl.it to inject the POST
 
+it will give you this:
+
+```javascript
+{
+"product": {
+"__v": 0,
+"description": "something original here",
+"category": "computers",
+"picture": "blank.jpg",
+"name": "MacbookPro 13",
+"_id": "58728467f0ffc30b297c0f39", //the id is autoloaded by mongo
+"price": 1200
+}
+}
+```
