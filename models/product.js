@@ -12,4 +12,4 @@ const ProductSchema = Schema ({
 });
 
 //my intencion is to migrate to firebase so sorry if i dont explain a lot.
-mongoose.model('Product', ProductSchema);
+module.exports = mongoose.model('Product', ProductSchema); // important de module export for importing this line later

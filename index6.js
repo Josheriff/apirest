@@ -7,6 +7,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const Product = require("./models/product"); // importing the mongoose model
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,8 +27,23 @@ app.get('/api/product/:productId',(req, res) => {
 // Adding POST
 
 app.post('/api/product', (req, res) =>{
+    console.log ('POST /api/product')
     console.log(req.body);
-    res.status(200).send({message: 'Producto recibido'});
+    
+    var product = new Product();
+    product.name = req.body.name ; //thans to bodyparser
+    product.picture = req.body.picture ;
+    product.price = req.body.price ;
+    product.category = req.body.category ;
+    product.description= req.body.description ;
+    
+    product.save((err,productStored)=> { //mongoose is connected
+        if (err) res.status(500).send({message: 'Error al salvar en la base de datos'}) ;
+        
+       res.status(200).send({product: productStored}); 
+    });
+    
+    
 });
 
 // Adding put (to refresh items)

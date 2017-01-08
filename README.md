@@ -169,3 +169,27 @@ mongoose.connect('mongodb://0.0.0.0:27017/shop', (err, res) => {
  
 ## changes in index6:
 
+- all the post area has changed:
+
+```javascript
+app.post('/api/product', (req, res) =>{
+    console.log ('POST /api/product')
+    console.log(req.body);
+    
+    var product = new Product();
+    product.name = req.body.name ; //thans to bodyparser
+    product.picture = req.body.picture ;
+    product.price = req.body.price ;
+    product.category = req.body.category ;
+    product.description= req.body.description ;
+    
+    product.save((err,productStored)=> { //mongoose is connected
+        if (err) res.status(500).send({message: 'Error al salvar en la base de datos'}) ;
+        
+       res.status(200).send({product: productStored}); 
+    });
+    
+    
+});
+```
+
