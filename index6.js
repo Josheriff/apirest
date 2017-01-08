@@ -17,10 +17,24 @@ app.use(bodyParser.json());
 // Adding GET
 
 app.get('/api/product',(req,res) => {
-        res.status(200).send({products: []}); // status 200 = OK
+    Product.find({}, (err,products) => {
+        if (err) return res.status(500).send({message: "error al realizar la conexion"});
+        if (!products) return res.status(404).send({message:'Aquí no hay nada de nada'});
+        res.status(200).send({products: []}); // status 200 = OK  
+    })
+        
 });
 
 app.get('/api/product/:productId',(req, res) => {
+    var productId = req.param.productId ; //defined by mongo
+    
+    Product.findById(productId, (err, product)=>{
+        if (err) return res.status(500).send({message: "error al realizar la conexion"});
+        if (!product) return res.status(404).send({message:'Error 404 a que jode?'});
+        
+        res.status(200).send({product});
+    })
+    
     
 });
 

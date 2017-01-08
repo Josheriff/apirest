@@ -209,3 +209,9 @@ it will give you this:
 }
 }
 ```
+
+#DISCLAIMER
+
+- Right now this code is not working or saving any information in your mongodb
+- Im plannig on change to firebase, so this is the "old way" and its very instructive
+- understand it and give me time to change to firebase. Thanks.
