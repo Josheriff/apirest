@@ -160,3 +160,12 @@ mongoose.connect('mongodb://0.0.0.0:27017/shop', (err, res) => {
 })
 ```
 
+## next step
+
+## changes:
+
+- New folder folder for moongose Schema
+- New file for moongose inside models folder
+ 
+## changes in index6:
+
